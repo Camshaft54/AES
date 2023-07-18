@@ -154,7 +154,7 @@ private fun Array<Array<Int>>.removeRoundKey(roundKey: Array<Array<Int>>): Array
 /**
  * Inverts the subBytes operation by passing each byte through the inverse sBox
  */
-private fun invSubBytes(data: Array<Array<Int>>): Array<Array<Int>> =
+ private fun invSubBytes(data: Array<Array<Int>>): Array<Array<Int>> =
     data.map { row ->
         row.map {
             sBox.indexOf(it)
